@@ -9,7 +9,7 @@ body {
 h1 {
 
     text-align: center;
-    font-size:300%;
+    font-size:500%;
     font-family: 'Caveat', cursive;
     
 }
@@ -43,8 +43,9 @@ li {
 
     text-align: center;
     font-size: 150%;
-    list-style-type: none;
+    list-style-type: circle;
     font-family: 'Caveat', cursive;
+
 }
 
 ul {
@@ -53,7 +54,17 @@ ul {
 }
 
 
-img{
+img {
 
     border: 5px solid #000000;
+}
+
+
+a {
+    color: #686181;
+    text-align: center;
+}
+
+a:visited { 
+    color: #868181;
 }
