@@ -4,40 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tervetuloa kotisivuilleni</title>
+    <title>Tervetuloa sivuilleni</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-image: url("../taustakuvat/maple-7590861_1920.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: rgba(220, 226, 220, 0.9);
-        }
-    </style>
 </head>
 
-<body class="container d-flex flex-column min-vh-100" style="background-color: rgba(220, 226, 220, 0.9);">
-    <header>
-        <nav
-            class="navbar navbar-expand-lg navbar-dark bg-dark container mb-5 border border-dark shadow p-3 mb-5 bg-light rounded">
+<body class="container-fluid custom-body d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg border border-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-6" href="#">Jenna Siitonen</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item px-3">
-                        <a class="nav-link active" aria-current="page" href="#etusivu">Etusivu</a>
+                        <a href="galleria.html" class="nav-link">Galleria</a>
                     </li>
                     <li class="nav-item px-3">
                         <a href="https://sannej84.github.io/portfolio/" class="nav-link">Portfolio</a>
@@ -47,67 +33,97 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <header>
+        <div class="container-fluid custom-header p-5 mb-5 border border-light">
+            <div id="etusivu" class="row justify-content-end align-items-center" style="min-height: 70vh;">
+                <div class="col-md-6 text-center">
+                    <h1 class="display-3 mb-3">Tervetuloa sivuilleni!</h1>
+                    <hr>
+                    <p class="fs-6 mb-5">Minulla on useamman vuoden kokemus myynnin- ja asiakaspalvelun parista.
+                    Tällä hetkellä opiskelen Tieto- ja viestintätekniikkaa verkko-opintoina ja tarkoituksena olisi oppia koodausta ja kehittää osaamistani tulevaisuuden työelämää varten.
+                    Käy katsomassa siis myös portfoliotani jossa esittelen muutamia projekteja joita olen tähän mennessä tehnyt.</p>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
-        <div class="container border border-dark shadow p-3 mb-5 rounded"
-            style="background-color: rgba(221, 218, 206, 0.9);">
-            <div id="etusivu" style="text-align: center;">
-                <div class="container-fluid">
-                    <h1 class="display-3 mb-5">Tervetuloa kotisivuilleni!</h1>
-                    <p class="fs-6 mb-5">Hei, olen Jenna, tervetuloa sivuilleni! Olen Pieksämäkeläinen nainen ja
-                        opiskelen tällä
-                        hetkellä Tieto- ja viestintätekniikkaa verkko-opintoina. Alla lyhyesti joitain asioita minusta.
-                        Käy
-                        lopuksi vielä kurkkaamassa portfoliotani!</p>
+    <div class="container custom-container border border-light shadow p-3 mb-5 rounded">
+        <div id="opinnot" style="text-align: center;">
+            <h2 class="display-6 mb-4">Aiemmat opinnot</h2>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Koulutus</th>
+                            <th>Oppilaitos</th>
+                            <th>Vuosi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Digimuuntamo koulutukset 1, 2 ja 3</td>
+                            <td>KasvuEsedu</td>
+                            <td>2022 - 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Taloushallinnon ammattitutkintoon valmistava koulutus</td>
+                            <td>Savon ammatti- ja aikuisopisto</td>
+                            <td>2011</td>
+                        </tr>
+                        <tr>
+                            <td>Liiketalouden perustutkinto, Merkonomi</td>
+                            <td>Pohjoisen Keski-Suomen oppimiskeskus</td>
+                            <td>2004</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container custom-container border border-light shadow p-3 mb-5 rounded">
+        <div id="työkokemus">
+            <h2 class="display-6 mb-4">Työkokemus</h2>
+            <p>Olen tehnyt töitä enimmäkseen myynnin- ja asiakaspalvelun parissa. Työkokemusta alalta on kertynyt
+                useamman vuoden ajalta.</p>
+            <p>Olen myös vastannut majatalon ajanvarauksista, vastaanotosta ja asiakaspalvelusta sekä huoneiden
+                siivouksesta.</p>
+            <p>Lisäksi olen tehnyt palkanlaskentaa ja kirjanpitoa sekä hoitanut laskutusta ja laatinut työtodistuksia.
+            </p>
+        </div>
+    </div>
+    <div class="container custom-container border border-light shadow p-3 mb-5 rounded">
+        <div id="harrastukset" class="text-center">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="Kuvat/repovesi.jpg" alt="Harrastukset" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="display-6 mb-4 mt-2">Harrastukset</h2>
+                    <p>
+                        Tykkään reissata ympäri Suomea ja kierrellä eri luontopolkuja ja kansallispuistoja. Myös
+                        mielenkiintoiset
+                        luontokohteet ja nähtävyydet kiinnostaa. Frisbeegolfiin hurahdin joitain vuosia sitten ja eri
+                        ratoja on myös mukava kierrellä ympäriinsä.
+                        Lisäksi kaiken luonnossa poukkoilun lisäksi, tykkään pelata erilaisia videopelejä ja katsoa
+                        elokuvia ja sarjoja.
+                    </p>
                 </div>
             </div>
         </div>
-                    <div class="container border border-dark shadow p-3 mb-5 rounded"
-                        style="background-color: rgba(221, 218, 206, 0.9);">
-                        <div id="opinnot" style="text-align: center;">
-                            <h2 class="display-6 mb-4">Aiemmat pinnot</h2>
-                            <p>KasvuEsedu - Digimuuntamo koulutukset 1,2 ja 3</p>
-                            <p>Savon ammatti- ja aikuisopisto - Taloushallinnon ammattitutkintoon valmistava koulutus
-                            </p>
-                            <p>Pohjoisen Keski-Suomen oppimiskeskus - Liiketalouden perustutkinto, Merkonomi</p>
-                        </div>
-                    </div>
-                    <div class="container border border-dark shadow p-3 mb-5 rounded"
-                        style="background-color:  rgba(221, 218, 206, 0.9);">
-                        <div id="työkokemus" style="text-align: center;">
-                        <h2 class="display-6 mb-4">Työkokemus</h2>
-                        <p>Olen tehnyt töitä enimmäkseen myynnin- ja asiakaspalvelun parissa.</p>
-                        <p>Lisäksi olen tehnyt mm. palkanlaskentaa ja kirjanpitoa.</p>
-                    </div>
-                </div>
-                <div class="container border border-dark shadow p-3 mb-5 rounded"
-                    style="background-color:  rgba(221, 218, 206, 0.9);">
-                    <div id="harrastukset" style="text-align: center;">
-                        <h2 class="display-6 mb-4">Harrastukset</h2>
-                        <p>Tykkään reissata ympäri Suomea ja kierrellä eri luontopolkuja ja kansallispuistoja.
-                            Myös mielenkiintoiset luontokohteet ja nähtävyydet kiinnostaa. Valokuvausta tulee myös
-                            jonkin verran
-                            harrasteltua.
-                            Frisbeegolfiin hurahdin joitain vuosia sitten ja eri ratoja myös mukava kierrellä
-                            ympäriinsä.
-                            Lisäksi tykkään pelata erilaisia videopeleja, pääasiassa pleikkarilla.</p>
-                    </div>
-                </div>
-                <div class="container border border-dark shadow p-3 mb-5 rounded"
-                    style="background-color:  rgba(221, 218, 206, 0.9);">
-                    <div id="yhteystiedot" style="text-align: center;">
-                        <h2 class="display-6 mb-3">Ota yhteyttä!</h2>
-                        <p>Lähetä viesti, niin palaan asiaan mahdollisimmin pian!</p>
-                        <p>siitonenjenna@gmail.com</p>
-                    </div>
-    </main>
-    <footer class="mt-auto">
-        <div class="container border bg-dark border-dark shadow p-3 mb-5 rounded">
-            <div id="footer" style="text-align: center; color: white;">
-                <p>&copy; Jenna Siitonen 2021</p>
-            </div>
+    </div>
+    <div class="container custom-container border border-light shadow p-3 mb-5 rounded">
+        <div id="yhteystiedot">
+            <h3 class="display-6 mb-5">Yhteystiedot</h3>
+            <p>Lähetä viestiä, niin palaan asiaan mahdollisimmin pian!</p>
+            <p>siitonenjenna@gmail.com</p>
         </div>
+    </div>
+    <footer class="container-fluid custom-footer border bg-dark border-dark shadow p-3">
+        <div id="footer" style="text-align: center">
+            <p>&copy; Jenna Siitonen 2024</p>
+        </div>
+    </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

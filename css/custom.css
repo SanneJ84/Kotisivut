@@ -1,0 +1,26 @@
+.custom-container {
+    background-color: rgba(221, 218, 215, 0.9);
+    text-align: center;
+}
+
+.custom-container-fluid {
+    background-color: rgba(221, 218, 215, 0.9);
+}
+
+.custom-footer {
+    color: white;
+}
+
+.custom-body {
+    background-color: rgb(173, 165, 165);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.custom-header {
+    background-image: url(../taustakuvat/fall-2857032_192022.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(80%);
+}
